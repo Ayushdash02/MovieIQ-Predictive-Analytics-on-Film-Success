@@ -27,7 +27,7 @@
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Business Problem](#-business-problem)
@@ -35,11 +35,11 @@
 - [Key Features](#-key-features)
 - [Analytical Workflow](#-analytical-workflow)
 - [Machine Learning Methodology](#-machine-learning-methodology)
-- [Dashboard Modules](#-dashboard-modules)
+- [Dashboard Previews](#-dashboard-previews)
 - [Technology Stack](#-technology-stack)
 - [Project Structure](#-project-structure)
 - [Installation and Setup](#-installation-and-setup)
-- [How Success Is Defined](#-how-success-is-defined)
+- [Financial Metrics](#-financial-metrics)
 - [Key Business Questions](#-key-business-questions)
 - [Business Value](#-business-value)
 - [Limitations](#-limitations)
@@ -50,46 +50,48 @@
 
 ## 🎬 Project Overview
 
-**MovieIQ — Predictive Analytics on Film Success** is a data analytics and machine learning project designed to investigate the financial performance, audience reception, and potential success of movies.
+**MovieIQ — Predictive Analytics on Film Success** is an end-to-end data analytics and machine learning project focused on understanding the financial performance, audience reception, and potential success of movies.
 
-The project combines exploratory data analysis (EDA), statistical hypothesis testing, interactive data visualization, feature engineering, and Random Forest classification to identify patterns associated with movie success.
+The project integrates exploratory data analysis (EDA), feature engineering, statistical hypothesis testing, interactive data visualization, and Random Forest classification to investigate factors associated with movie success.
 
-An interactive Streamlit dashboard brings the analytical findings together in a unified interface, allowing users to explore movie performance, investigate success drivers, and understand model predictions.
+An interactive Streamlit dashboard presents the analytical findings through financial analysis, genre comparisons, audience intelligence, model evaluation, and business recommendations.
 
 ### Project Highlights
 
-- Exploratory analysis of movie financial and audience data.
-- Budget, revenue, profit, and return on investment (ROI) analysis.
-- Genre-wise and audience-rating comparisons.
+- Comprehensive exploratory data analysis.
+- Movie budget, revenue, profit, and ROI analysis.
+- Genre-wise financial performance comparisons.
+- Audience rating and popularity analysis.
 - Statistical hypothesis testing.
 - Random Forest classification for movie success prediction.
 - Model evaluation using classification metrics.
-- Interactive visualizations and business recommendations.
+- Interactive Streamlit dashboard with Plotly visualizations.
+- Business insights and data-driven recommendations.
 
 ---
 
 ## 🎯 Business Problem
 
-Movie production involves substantial financial investment, uncertain audience demand, and unpredictable commercial outcomes.
+The film industry involves substantial financial investments, uncertain audience demand, and unpredictable commercial outcomes. Understanding which factors are associated with financial success can help stakeholders evaluate historical performance and investigate potential risks.
 
-Production budgets, genres, audience ratings, popularity, and runtime may be associated with a movie's financial performance. However, these relationships do not guarantee commercial success.
+Movie budgets, genres, audience ratings, popularity, and runtime may be associated with financial outcomes. However, these relationships do not necessarily imply causation or guarantee future success.
 
-MovieIQ investigates these factors to identify meaningful patterns in historical movie data and develop a classification model that estimates whether a movie may achieve financial success under a defined target criterion.
+MovieIQ uses historical movie data to analyze these relationships and develop a classification model that estimates movie success under a defined financial criterion.
 
-The objective is to support data-informed analysis rather than replace creative judgment, market research, or professional investment decisions.
+The project aims to support analytical decision-making through data exploration, statistical evaluation, and predictive modeling rather than replace professional judgment or comprehensive film investment analysis.
 
 ---
 
 ## 🎯 Project Objectives
 
-1. Evaluate the financial performance of movies using budget, revenue, profit, and ROI.
-2. Identify differences in performance across movie genres and budget segments.
+1. Analyze movie financial performance using budget, revenue, profit, and ROI.
+2. Examine performance differences across genres and budget segments.
 3. Investigate relationships between audience ratings, popularity, runtime, and revenue.
-4. Apply statistical tests to evaluate selected analytical hypotheses.
-5. Build a Random Forest classification model for movie success prediction.
-6. Evaluate model performance using appropriate classification metrics.
-7. Develop an interactive Streamlit dashboard for data exploration and reporting.
-8. Translate analytical findings into practical business recommendations.
+4. Apply statistical tests to evaluate selected hypotheses.
+5. Develop a Random Forest classifier to predict movie success.
+6. Evaluate predictive performance using classification metrics.
+7. Build an interactive Streamlit dashboard for analytical exploration.
+8. Translate findings into practical business recommendations.
 
 ---
 
@@ -97,16 +99,16 @@ The objective is to support data-informed analysis rather than replace creative 
 
 | Feature | Description |
 |---|---|
-| Executive Overview | Summarizes major portfolio performance indicators. |
-| Movie Explorer | Supports detailed exploration and filtering of movie records. |
-| Financial Performance | Analyzes revenue, profit, budget, and ROI. |
-| Genre Intelligence | Compares performance across movie genres. |
-| Audience Intelligence | Examines ratings, popularity, and audience engagement. |
-| Success Drivers | Investigates variables associated with movie success. |
-| Statistical Testing | Evaluates selected hypotheses using statistical methods. |
-| Predictive Analytics | Applies a trained Random Forest classifier. |
-| Model Performance | Presents classification evaluation results. |
-| Business Insights | Converts findings into actionable recommendations. |
+| Executive Overview | Summarizes portfolio-level performance indicators. |
+| Movie Explorer | Enables movie-level exploration and filtering. |
+| Financial Performance | Analyzes budget, revenue, profit, and ROI. |
+| Genre Intelligence | Compares financial and audience trends by genre. |
+| Audience Intelligence | Examines ratings, popularity, and engagement indicators. |
+| Success Drivers | Investigates factors associated with movie success. |
+| Statistical Testing | Presents hypothesis tests and statistical findings. |
+| Predictive Analytics | Applies the trained Random Forest classifier. |
+| Model Performance | Evaluates model predictions and classification metrics. |
+| Business Insights | Communicates analytical findings and recommendations. |
 | Data Quality | Examines missing values, duplicates, and data consistency. |
 
 ---
@@ -119,42 +121,46 @@ The objective is to support data-informed analysis rather than replace creative 
 
 </div>
 
-### Workflow Details
+### 1. Data Preparation
 
-**1. Data Preparation**
-- Load the movie dataset.
-- Inspect column names, data types, and dataset dimensions.
-- Identify missing values, duplicate records, and invalid financial values.
-- Validate the fields required for financial analysis.
+- Load and inspect the movie dataset.
+- Review data types, dimensions, and column distributions.
+- Identify missing values and duplicate records.
+- Validate financial records and analytical variables.
 
-**2. Feature Engineering**
+### 2. Feature Engineering
+
 - Calculate profit and return on investment.
 - Extract release year from release dates.
-- Standardize genre information.
+- Standardize and process genre information.
 - Create budget, rating, popularity, and revenue segments.
 - Define the binary movie success target.
 
-**3. Exploratory Data Analysis**
+### 3. Exploratory Data Analysis
+
 - Analyze financial performance distributions.
-- Investigate budget–revenue relationships.
-- Compare genre performance.
-- Explore audience ratings and popularity patterns.
-- Examine correlations among numerical variables.
+- Investigate the relationship between budget and revenue.
+- Compare performance across genres.
+- Examine audience ratings and popularity.
+- Investigate correlations among numerical variables.
 
-**4. Statistical Analysis**
-- Apply suitable hypothesis tests.
-- Interpret statistical significance using p-values.
-- Assess relationships and differences within the analyzed dataset.
+### 4. Statistical Analysis
 
-**5. Predictive Modeling**
+- Apply suitable statistical hypothesis tests.
+- Interpret p-values and statistical significance.
+- Examine selected differences and relationships in the dataset.
+
+### 5. Predictive Modeling
+
 - Prepare model features and target labels.
-- Split data into training and testing sets.
+- Separate training and testing data.
 - Train a Random Forest classifier.
 - Evaluate predictions on held-out data.
 
-**6. Dashboard Development**
-- Build interactive Streamlit pages.
-- Present key metrics, charts, filters, and model results.
+### 6. Dashboard Development
+
+- Develop interactive Streamlit dashboard pages.
+- Present key performance indicators and visualizations.
 - Communicate findings through business-oriented insights.
 
 ---
@@ -163,96 +169,146 @@ The objective is to support data-informed analysis rather than replace creative 
 
 ### Algorithm: Random Forest Classifier
 
-MovieIQ uses a Random Forest classification approach to estimate the probability or class of movie success from selected input features.
+MovieIQ uses a Random Forest classification model to estimate whether a movie meets the project's financial success criterion.
 
-Random Forest combines multiple decision trees to produce a classification result. It can model nonlinear relationships and interactions between input variables.
+Random Forest combines multiple decision trees to generate predictions. It can capture nonlinear relationships and interactions between input variables.
 
 ### Target Variable
 
-The binary target is defined as:
+The binary target is defined as follows:
 
-- **Successful (1):** Revenue is greater than budget.
-- **Not Successful (0):** Revenue is less than or equal to budget.
+| Class | Definition |
+|---|---|
+| Successful (1) | Revenue is greater than budget. |
+| Not Successful (0) | Revenue is less than or equal to budget. |
 
-This is a simplified financial definition of success. It does not account for marketing costs, distribution fees, taxes, or other production-related expenses unless those costs are included in the dataset.
+This represents a simplified financial success definition. It does not account for marketing expenditure, distribution fees, taxes, or other costs unless those expenses are included in the dataset.
 
 ### Model Evaluation Metrics
 
-| Metric | Purpose |
+| Metric | Analytical Purpose |
 |---|---|
 | Accuracy | Measures the proportion of correct predictions. |
-| Precision | Measures how many predicted successes are actually successful. |
-| Recall | Measures how many actual successes the model identifies. |
+| Precision | Measures the proportion of predicted successes that are actual successes. |
+| Recall | Measures the proportion of actual successes correctly identified. |
 | F1-score | Balances precision and recall. |
-| Confusion Matrix | Shows correct and incorrect predictions by class. |
-| Feature Importance | Indicates which included features contribute to the fitted model's decisions. |
+| Confusion Matrix | Summarizes correct and incorrect predictions by class. |
+| Feature Importance | Shows the relative importance assigned to features by the fitted model. |
 
-Actual model performance values should be taken from the final trained model and test results rather than assumed in advance.
+Actual evaluation values should be taken from the final trained model and test results.
 
 ---
 
-## 📊 Dashboard Modules
+## 📸 Dashboard Previews
 
-The MovieIQ Streamlit dashboard is organized into analytical modules:
+Explore the MovieIQ dashboard through its 11 analytical modules. Each screenshot below is loaded directly from the `dashboard-preview/` directory.
 
-| Module | Analytical Focus |
-|---|---|
-| Executive Overview | Overall movie portfolio performance |
-| Movie Explorer | Individual records and filtering |
-| Financial Performance | Budgets, revenues, profits, and ROI |
-| Genre Intelligence | Genre-level financial and audience trends |
-| Audience Intelligence | Ratings, popularity, and engagement |
-| Success Drivers | Factors associated with success |
-| Statistical Testing | Hypothesis testing and interpretation |
-| Predictive Analytics | Movie success classification |
-| Model Performance | Classification metrics and diagnostics |
-| Business Insights | Findings and recommendations |
-| Data Quality | Dataset validation and quality checks |
+### 1. Executive Overview
 
-### 📸 Dashboard Previews
+The executive dashboard provides a consolidated view of movie portfolio performance and key financial indicators.
 
-Add your actual Streamlit screenshots to the `previews/` directory and use the corresponding filenames below.
+<p align="center">
+  <img src="dashboard-preview/executive-overview.png" alt="MovieIQ Executive Overview Dashboard" width="100%">
+</p>
 
-<div align="center">
+### 2. Movie Explorer
 
-### Executive Overview
+Explore individual movie records and investigate relevant movie attributes.
 
-<img src="previews/executive-overview.png" alt="MovieIQ Executive Overview Dashboard" width="100%"/>
+<p align="center">
+  <img src="dashboard-preview/movie-explorer.png" alt="MovieIQ Movie Explorer Dashboard" width="100%">
+</p>
 
-### Financial Performance
+### 3. Financial Performance
 
-<img src="previews/financial-performance.png" alt="MovieIQ Financial Performance Dashboard" width="100%"/>
+Analyze movie budgets, revenue, profitability, and return on investment.
 
-### Genre Intelligence
+<p align="center">
+  <img src="dashboard-preview/financial-performance.png" alt="MovieIQ Financial Performance Dashboard" width="100%">
+</p>
 
-<img src="previews/genre-intelligence.png" alt="MovieIQ Genre Intelligence Dashboard" width="100%"/>
+### 4. Genre Intelligence
 
-### Predictive Analytics
+Compare genre-level performance and explore differences in financial outcomes.
 
-<img src="previews/predictive-analytics.png" alt="MovieIQ Predictive Analytics Dashboard" width="100%"/>
+<p align="center">
+  <img src="dashboard-preview/genre-intelligence.png" alt="MovieIQ Genre Intelligence Dashboard" width="100%">
+</p>
 
-</div>
+### 5. Audience Intelligence
 
-> **Note:** These are the expected screenshot paths. Upload your images using these exact filenames or update the paths to match your actual files. GitHub will not display images that have not been uploaded.
+Investigate audience ratings, movie popularity, and engagement-related indicators.
+
+<p align="center">
+  <img src="dashboard-preview/audience-intelligence.png" alt="MovieIQ Audience Intelligence Dashboard" width="100%">
+</p>
+
+### 6. Success Drivers
+
+Explore variables associated with movie success and compare performance patterns.
+
+<p align="center">
+  <img src="dashboard-preview/success-drivers.png" alt="MovieIQ Success Drivers Dashboard" width="100%">
+</p>
+
+### 7. Statistical Testing
+
+Review hypothesis-testing results and evaluate selected statistical relationships.
+
+<p align="center">
+  <img src="dashboard-preview/statistical-testing.png" alt="MovieIQ Statistical Testing Dashboard" width="100%">
+</p>
+
+### 8. Predictive Analytics
+
+Explore the machine learning module for estimating movie success.
+
+<p align="center">
+  <img src="dashboard-preview/predictive-analytics.png" alt="MovieIQ Predictive Analytics Dashboard" width="100%">
+</p>
+
+### 9. Model Performance
+
+Review classification performance, evaluation metrics, and model diagnostics.
+
+<p align="center">
+  <img src="dashboard-preview/model-performance.png" alt="MovieIQ Model Performance Dashboard" width="100%">
+</p>
+
+### 10. Business Insights
+
+Review the business implications of the analysis and potential recommendations.
+
+<p align="center">
+  <img src="dashboard-preview/business-insights.png" alt="MovieIQ Business Insights Dashboard" width="100%">
+</p>
+
+### 11. Data Quality
+
+Inspect data quality indicators and identify potential issues in the analytical dataset.
+
+<p align="center">
+  <img src="dashboard-preview/data-quality.png" alt="MovieIQ Data Quality Dashboard" width="100%">
+</p>
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose |
+| Technology | Application |
 |---|---|
-| Python | Core programming language |
+| Python | Core programming and analytical workflow |
 | Pandas | Data manipulation and analysis |
 | NumPy | Numerical computation |
-| Matplotlib | Statistical plotting |
+| Matplotlib | Statistical visualization |
 | Seaborn | Exploratory data visualization |
-| Plotly | Interactive visualizations |
+| Plotly | Interactive charts |
 | Scikit-learn | Machine learning and model evaluation |
-| Streamlit | Interactive analytics dashboard |
-| Joblib / Pickle | Model serialization, depending on implementation |
-| Git and GitHub | Version control and project hosting |
+| Streamlit | Interactive dashboard development |
+| Git | Version control |
+| GitHub | Source code hosting and project documentation |
 
-Only retain libraries that are actually used by your implementation.
+The final dependency list should reflect the libraries actually used by the application.
 
 ---
 
@@ -264,7 +320,6 @@ MovieIQ-Predictive-Analytics-on-Film-Success/
 ├── MovieIQ.py
 ├── requirements.txt
 ├── README.md
-│
 ├── movies.csv
 │
 ├── data/
@@ -277,14 +332,21 @@ MovieIQ-Predictive-Analytics-on-Film-Success/
 │   ├── movieiq_logo.png
 │   └── favicon.png
 │
-└── previews/
+└── dashboard-preview/
+    ├── audience-intelligence.png
+    ├── business-insights.png
+    ├── data-quality.png
     ├── executive-overview.png
     ├── financial-performance.png
     ├── genre-intelligence.png
-    └── predictive-analytics.png
+    ├── model-performance.png
+    ├── movie-explorer.png
+    ├── predictive-analytics.png
+    ├── statistical-testing.png
+    └── success-drivers.png
 ```
 
-> Adjust this structure to match your actual repository. Avoid uploading duplicate datasets or model files unless both are required by the application.
+**Note:** Adjust the structure to match your actual repository. Keep only the files and directories required by your implementation. Avoid storing duplicate datasets unnecessarily.
 
 ---
 
@@ -292,8 +354,8 @@ MovieIQ-Predictive-Analytics-on-Film-Success/
 
 ### Prerequisites
 
-- Python 3.10 or another version supported by your dependencies.
-- Git.
+- Python installed on your system.
+- Git installed on your system.
 - A code editor such as Visual Studio Code.
 
 ### Step 1: Clone the Repository
@@ -304,7 +366,7 @@ git clone https://github.com/YOUR-USERNAME/MovieIQ-Predictive-Analytics-on-Film-
 
 Replace `YOUR-USERNAME` with your GitHub username.
 
-### Step 2: Navigate to the Project Directory
+### Step 2: Navigate to the Project
 
 ```bash
 cd MovieIQ-Predictive-Analytics-on-Film-Success
@@ -316,7 +378,7 @@ cd MovieIQ-Predictive-Analytics-on-Film-Success
 python -m venv .venv
 ```
 
-Activate it on Windows:
+Activate the environment on Windows:
 
 ```bash
 .venv\Scripts\activate
@@ -329,29 +391,43 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Step 5: Verify the Required Files
+### Step 5: Verify Project Files
 
-Confirm that the application can access the movie dataset, trained model, and assets at the paths expected by the code.
+Confirm that the dataset, model file, logo, and other required assets are available at the paths expected by `MovieIQ.py`.
 
-### Step 6: Run the Streamlit Dashboard
+### Step 6: Launch the Dashboard
 
 ```bash
 python -m streamlit run MovieIQ.py
 ```
 
-Streamlit will provide a local URL, typically:
+Open the local URL displayed in the terminal. The default address is usually:
 
 ```text
 http://localhost:8501
 ```
 
-Open that URL in your browser to explore the dashboard.
-
 ---
 
-## 💰 How Success Is Defined
+## 💰 Financial Metrics
 
-MovieIQ uses a simple revenue-versus-budget rule to create the classification target:
+### Profit
+
+Profit is calculated as:
+
+\[
+\text{Profit} = \text{Revenue} - \text{Budget}
+\]
+
+### Return on Investment
+
+\[
+\text{ROI (\%)} =
+\frac{\text{Revenue} - \text{Budget}}{\text{Budget}}
+\times 100
+\]
+
+### Financial Success Classification
 
 \[
 \text{Success} =
@@ -361,76 +437,60 @@ MovieIQ uses a simple revenue-versus-budget rule to create the classification ta
 \end{cases}
 \]
 
-Profit is calculated as:
-
-\[
-\text{Profit} = \text{Revenue} - \text{Budget}
-\]
-
-Return on investment is calculated as:
-
-\[
-\text{ROI (\%)} =
-\frac{\text{Revenue} - \text{Budget}}{\text{Budget}}
-\times 100
-\]
-
-These metrics represent simplified financial indicators. Revenue exceeding production budget does not necessarily mean a movie generated a net profit after all associated expenses.
+These calculations provide simplified financial indicators. Revenue exceeding the production budget does not necessarily establish net profitability after all associated expenses.
 
 ---
 
 ## 🔍 Key Business Questions
 
-MovieIQ explores questions such as:
+MovieIQ investigates the following questions:
 
-- Is a higher production budget associated with higher revenue?
+- Is production budget associated with movie revenue?
 - Which genres demonstrate stronger financial performance?
-- How do audience ratings and popularity relate to revenue?
-- Which budget segments exhibit different success patterns?
-- Are there statistically significant differences between selected movie groups?
-- How effectively can a Random Forest classifier identify movie success?
-- Which features contribute most to the trained model's predictions?
-- How can historical movie data support more informed investment analysis?
+- How are audience ratings and popularity related to revenue?
+- How does financial success vary across budget segments?
+- Are selected differences between movie groups statistically significant?
+- How effectively does the Random Forest classifier identify movie success?
+- Which input features contribute most to the model's predictions?
+- How can historical movie data inform preliminary investment analysis?
 
 ---
 
 ## 💡 Business Value
 
-The project demonstrates how data analytics and machine learning can support film industry research.
+MovieIQ demonstrates how data analytics and machine learning can support film industry research.
 
-Potential applications include:
-
-- **Production planning:** Explore historical relationships between budgets and revenue.
-- **Genre strategy:** Compare genre-level financial performance.
-- **Audience research:** Investigate rating and popularity patterns.
+- **Production planning:** Explore historical budget and revenue patterns.
+- **Genre strategy:** Compare genre-level performance.
+- **Audience research:** Investigate rating and popularity relationships.
 - **Risk assessment:** Examine historical success rates across budget segments.
-- **Decision support:** Use classification outputs as one input to preliminary analysis.
-- **Reporting:** Communicate trends through interactive visualizations.
+- **Decision support:** Use model outputs as one input to preliminary analysis.
+- **Reporting:** Communicate findings through interactive visualizations.
 
-Model predictions are exploratory estimates, not guarantees of future box-office performance.
+Predictions are estimates based on the available data and model assumptions, not guarantees of future box-office performance.
 
 ---
 
 ## ⚠️ Limitations
 
 - Historical movie data may contain missing, inconsistent, or incomplete financial records.
-- Reported revenue and budget may not represent complete financial outcomes.
-- The success definition does not account for all production and distribution costs.
-- Genre, rating, and popularity fields may be incomplete or measured inconsistently.
-- Predictive performance depends on feature selection, data quality, and the train-test methodology.
+- Budget and revenue figures may not represent complete financial outcomes.
+- The target definition does not account for every production and distribution cost.
+- Genre, rating, and popularity information may be incomplete or inconsistent.
+- Predictive performance depends on data quality, feature selection, and evaluation methodology.
 - Feature importance does not establish causation.
-- A model trained on historical records may not generalize to future releases or changing audience preferences.
+- A model trained on historical movies may not generalize to future releases.
 
 ---
 
 ## 🔮 Future Enhancements
 
 - Incorporate inflation-adjusted financial metrics.
-- Add marketing, distribution, and release-strategy variables where available.
+- Add marketing, distribution, and release-strategy variables.
 - Apply cross-validation and systematic hyperparameter tuning.
-- Evaluate additional classification algorithms.
-- Add probability calibration and explainability methods.
-- Improve deployment, testing, and model version management.
+- Compare Random Forest with other classification algorithms.
+- Add model explainability and probability calibration.
+- Improve deployment, automated testing, and model versioning.
 - Integrate updated datasets and monitor model performance over time.
 
 ---
@@ -439,11 +499,11 @@ Model predictions are exploratory estimates, not guarantees of future box-office
 
 <div align="center">
 
-**Ayush Dash**
+  **Ayush Dash**
 
-Data Analytics • Business Intelligence • Machine Learning
+  Data Analytics | Business Intelligence | Machine Learning
 
-[GitHub](https://github.com/YOUR-USERNAME)
+  [GitHub Profile](https://github.com/YOUR-USERNAME)
 
 </div>
 
@@ -451,8 +511,8 @@ Data Analytics • Business Intelligence • Machine Learning
 
 <div align="center">
 
-**MovieIQ — Turning Movie Data into Predictive Intelligence**
+  **MovieIQ — Turning Movie Data into Predictive Intelligence**
 
-*Built for analytical exploration, predictive modeling, and data-driven decision support.*
+  *An analytical project combining financial performance analysis, statistical methods, and machine learning.*
 
 </div>
