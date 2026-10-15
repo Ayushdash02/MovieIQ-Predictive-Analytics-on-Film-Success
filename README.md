@@ -393,12 +393,6 @@ Presents key performance indicators used to summarize movie portfolio performanc
   <img src="preview/KPI_cards.jpg" alt="MovieIQ KPI Cards" width="100%">
 </p>
 
-### 13. MovieIQ Project Logo
-
-<p align="center">
-  <img src="preview/movieiq-logo.png" alt="MovieIQ Project Logo" width="220">
-</p>
-
 ---
 
 ## 🛠️ Technology Stack
