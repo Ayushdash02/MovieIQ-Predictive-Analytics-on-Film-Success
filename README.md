@@ -1,7 +1,7 @@
 
 <div align="center">
 
-  <img src="assets/movieiq_logo.png" alt="MovieIQ Logo" width="180"/>
+  <img src="preview/movieiq-logo.png" alt="MovieIQ Logo" width="180"/>
 
   # MovieIQ — Predictive Analytics on Film Success
 
